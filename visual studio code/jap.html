@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Név bekérés</title>
+</head>
+<body>
+
+  <h2>Add meg a neved:</h2>
+
+  <input type="text" id="nevInput" placeholder="Ide írd a neved">
+  <button onclick="kiirNev()">OK</button>
+
+  <p id="eredmeny"></p>
+
+  <script>
+    function kiirNev() {
+      let nev = document.getElementById("nevInput").value;
+
+      if (nev.trim() === "") {
+        document.getElementById("eredmeny").innerText =
+          "Kérlek, adj meg egy nevet!";
+      } else {
+        document.getElementById("eredmeny").innerText =
+          "Szia, " + nev + "!";
+      }
+    }
+  </script>
+
+</body>
+</html>
