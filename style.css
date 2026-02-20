@@ -1,0 +1,150 @@
+
+
+body{
+
+    background-color: rgb(117, 114, 114);
+
+}
+
+
+#p1{
+
+
+    color: white;
+    font-family: verdana, arial;
+    font-size: 50px;
+    background-color: aqua;
+    border: 5px  solid blue;
+    padding: 10px;
+    width: fit-content;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    animation: pulse 1.5s infinite;
+    border-radius: 10px;
+    cursor: default;
+    
+}
+
+@keyframes pulse{
+
+    0%{
+
+        border-color: blue;
+    }
+    50%{
+
+        border-color: rgb(0, 0, 0);
+    }
+    100%{
+
+        border-color: blue;
+    }
+
+
+}
+
+#p2{
+
+     color: black;
+    font-family: verdana, arial;
+    font-size: 50px;
+    background-color: greenyellow;
+    cursor: default;
+    padding: 10px;
+    width: fit-content;
+    margin: 30px;
+    display: inline-block;
+    text-align: center;
+    animation: draw 4s infinite;
+    background: 
+    linear-gradient(black, black) top
+    left / 2px 0% no-repeat,
+    linear-gradient(black, black) top
+    right / 2px 0% no-repeat,
+    linear-gradient(black, black) 
+    bottom right / 0% 2px no-repeat,
+    linear-gradient(black, black) 
+    bottom left / 0% 2px no-repeat;
+    
+    
+    
+}
+
+
+@keyframes draw{
+
+ 
+    0% {background-size: 0% 2px, 2px 0%, 0% 2px, 2px 0%;}
+
+    50% {background-size: 100% 2px, 2px 100%, 100% 2px, 2px 100%;}
+
+    100% {background-size: 0% 2px, 2px 0%, 0% 2px, 2px 0%;}
+
+
+}
+
+
+
+#p3{
+
+    color: rgb(255, 174, 0);
+    font-family: verdana, arial;
+    font-size: 50px;
+    background-color: aqua;
+    border: 5px  solid rgb(255, 0, 0);
+    padding: 10px;
+    width: fit-content;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+
+#p3:hover{
+
+    color: rgb(255, 174, 0);
+    font-family: verdana, arial;
+    font-size: 50px;
+    background-color: aqua;
+    border: 5px  solid blue;
+    padding: 10px;
+    width: fit-content;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    transition: scale(1.2);
+    border-radius: 10px;
+
+}
+
+
+#p4{
+
+    color: rgb(0, 255, 149);
+
+}
+
+
+
+#p5{
+
+    color: rgb(0, 168, 8);
+
+}
+
+.odd{
+
+color: goldenrod;
+
+}
+
+.even{
+
+    color: yellow;
+
+}
