@@ -3,14 +3,14 @@
 body{
 
     background-color: rgb(117, 114, 114);
-
+    
 }
 
 
 #p1{
 
-
-    color: white;
+    
+    color: rgb(0, 0, 0);
     font-family: verdana, arial;
     font-size: 50px;
     background-color: aqua;
@@ -125,7 +125,30 @@ body{
 
 #p4{
 
-    color: rgb(0, 255, 149);
+    color: rgb(17, 173, 0);
+    font-family: verdana, arial;
+    font-size: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 5px  solid blue;
+    padding: 10px;
+    width: fit-content;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    animation: pulse 1.5s infinite;
+    border-radius: 10px;
+    cursor: default;
+    text-shadow: 3px 2px 3px rgb(255, 0, 0), 
+    -3px -2px 3px rgb(61, 157, 195);
+
+}
+#box1{
+
+    width:100px;
+    height: 100px;
+    background-color: rgb(162, 173, 182);
+    box-shadow: 3px 3px 5px ;
+    
 
 }
 
@@ -146,5 +169,172 @@ color: goldenrod;
 .even{
 
     color: yellow;
+
+}
+
+#img1{
+
+    float:left;
+    margin-right: 10px;
+}
+#img2{
+
+    float: right;
+    margin-right: 10px;
+}
+#keret1{
+
+    width:1000px;
+    height: 300px;
+    background-color: rgb(162, 173, 182);
+    box-shadow: 3px 3px 5px ;
+    display: flow-root;
+}
+
+#scroll1{
+    width: 1000px;
+    background-color: rgb(162, 173, 182);
+    border: 2px;
+    height: 100px;
+    overflow: scroll;
+}
+#div1{
+    background-color: red;
+    display: block;
+
+
+}
+span{
+
+    background-color: blue;
+    
+}
+#box2{
+
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+    top:100px;
+    left: 100px;
+    
+}
+#container1{
+
+    border: 2px solid;
+}
+#container1 + p{
+
+    background-color: yellow;
+}
+button:hover{
+
+    font-size: 1.1em ;
+    background-color: green;
+
+}
+button:active{
+
+    font-size: 1.1em ;
+    background-color: red;
+
+}
+
+
+#marks li:hover{
+
+    background-color: rgb(189, 189, 111);
+    width: fit-content;
+}
+#marks li:not(:hover){
+
+    background-color: rgb(145, 145, 145);
+    width: fit-content;
+}
+#marks li:nth-child(3n+2){
+
+    background-color: rgb(56, 216, 56);
+
+}
+#greeting p{
+
+    background-color: rgb(221, 221, 255);
+    padding: 10px;
+    display: none;
+
+}
+#greeting:hover p{
+
+    
+    display: block;
+
+}
+h3::first-letter{
+
+    font-size: 2em;
+    font-style: italic;
+
+
+}
+#p45::first-line{
+
+    background-color: rgb(154, 154, 2);
+
+}
+#p45::selection{
+
+    color: green;
+    background-color: rgb(71, 71, 71);
+
+}
+#apple::after{
+
+    content: "🍎";
+
+}
+#banana::after{
+
+    content: "🍌";
+
+}
+#orange::after{
+
+    content: "🍊";
+
+}
+#fruit li::marker{
+
+    content:"✔️";
+    color: green;
+    font-size: 1.2em;
+}
+.pagination{
+    
+    border: 2px;
+    background-color: rgb(94, 94, 130);
+    
+    padding: 10px;
+    text-align: center;
+
+}
+.pagination a{
+
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+
+}
+
+.pagination a.active{
+
+    background-color: rgb(194, 194, 194);
+    border-radius: 10px;
+
+}
+.pagination a:hover:not(.active){
+
+    background-color: aqua;
+    border-radius: 10px;
 
 }
