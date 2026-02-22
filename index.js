@@ -561,7 +561,7 @@ while(!loggedIn){
 
 }
 */
-
+/*
 for(let i = 10; i>0; i--){
 
     console.log(i);
@@ -580,6 +580,8 @@ for(let i = 1; i<=20; i++){
     }
 }
 console.log("Happy new year");
+*/
+/*
 for(let i = 1; i<=20; i++){
     if(i == 13){
         break;
@@ -593,7 +595,7 @@ for(let i = 1; i<=20; i++){
 }
 
 
-
+*/
 
 
 
@@ -719,6 +721,146 @@ function convert(){
         result20.textContent ="Select a unit.";
     }
 }
+
+
+
+
+/*
+fruits[3]= "coconut";
+fruits.push("apple")
+fruits.pop();
+fruits.unshift("mango");
+fruits.shift();
+console.log(fruits[0]);
+console.log(fruits);
+console.log(fruits[1]);
+console.log(fruits[2]);
+
+let numOfFruits = fruits.length;
+let index =fruits.indexOf("mango");
+    if(fruits.indexOf("mango")<=-1){
+
+        console.log("there is no mango")
+        
+    }
+    else{
+        console.log(index)
+
+    }
+*/
+/*
+let fruits =["apple", "orange", "banana", "coconut"];
+
+for(let i = 1; i < fruits.length; i++){
+    console.log(fruits[i]);
+
+
+
+}
+fruits.sort().reverse();
+
+
+
+let numero = [1,2,3,4,5,6];
+let maxima = Math.max(...numero);
+let minima =Math.min(...numero);
+
+
+
+
+console.log(minima);
+
+let Useroname = "Bbazs Breki";
+let letters = [...Useroname].join("-");
+
+
+console.log(letters);
+
+let fruito =["apple","orange", "banana"];
+let vegetables =["carrot","cabbage", "cellary","potatoes"]
+let foods = [...fruito, ...vegetables,"eggs","milk"];
+
+console.log(foods);
+
+*/
+/*
+function openFridge(...foodos){
+
+    console.log(foodos);
+}
+function getFood(...foodos){
+    return foodos;
+
+}
+const food1 ="pizza";
+const food2 ="hamburger";
+const food3 ="hotdog";
+const food4 ="sushi";
+const food5 ="ramen";
+openFridge(food1, food2, food3 ,food4, food5);
+
+const foodoos =getFood(food1,food2,food3,food4,food5);
+console.log(foodoos);
+
+function sum(...nUMBERs){
+
+    let resulT= 0;
+    for(let nUMBEr of nUMBERs){
+        resulT+= nUMBEr
+
+
+    }
+    return resulT;
+
+}
+const total = sum(1 ,2 ,3 , 4 ,5)
+console.log(`Your total is $${total}`);
+
+function getAvarage(...nUMBERs){
+
+    let resulT= 0;
+    for(let nUMBEr of nUMBERs){
+        resulT+= nUMBEr
+
+
+    }
+    return resulT / nUMBERs.length;
+
+}
+const avg = getAvarage(134 ,45 ,67 , 68 , 86)
+console.log(`Your avg total is $${avg}`);
+
+function combineString(...strings){
+
+    return strings.join(" ");
+}
+
+const FullName = combineString("Mr.", "Spongebob", "Squarepants","III");
+console.log(FullName);
+*/
+
+
+
+
+
+function rollDice(){
+
+    const numOfDice = document.getElementById("numOfDice").value;
+    const diceResult = document.getElementById("dicerResult");
+    const diceImages = document.getElementById("diceImages");
+    const values = [];
+    const images = [];
+
+    for(let a = 0; a < numOfDice; a++){
+        const value = Math.floor(Math.random() * 6) + 1;
+        values.push(value);
+        images.push(`<img src="diceimgs/${value}.png" alt="Dice ${value}">`);
+    }
+
+    diceResult.textContent =`dice: ${values.join(`, `)}`
+    diceImages.innerHTML = images.join(``);
+}
+
 
 
 
