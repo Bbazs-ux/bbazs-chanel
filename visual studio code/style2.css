@@ -1,0 +1,373 @@
+
+body{
+
+    background-color: cornflowerblue;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.pagination{
+    
+    border: 2px;
+    background-color: rgb(94, 94, 130);
+    
+    padding: 10px;
+    text-align: center;
+
+}
+.pagination a{
+
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+
+}
+
+.pagination a.active{
+
+    background-color: rgb(194, 194, 194);
+    border-radius: 10px;
+
+}
+.pagination a:hover:not(.active){
+
+    background-color: aqua;
+    border-radius: 10px;
+
+}
+
+
+#countLabel{
+
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family:  Helvetica;
+
+}
+#buttonContainer{
+
+    text-align: center;
+
+}
+.buttons{
+
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgb(111, 111, 211);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+
+}
+.buttons:hover{
+
+    background-color: rgb(87, 87, 163);
+
+}
+#myButtonn{
+    
+    font-size: 3em;
+    padding: 5px 25px;
+    border-radius: 5px;
+
+}
+.myLabels{
+    background-color: rgb(177, 56, 56);
+    font-size: 3em;
+    border: 3px solid;
+   
+}
+
+#dice li::marker{
+
+
+
+    content:"✔️";
+    color: green;
+    font-size: 1.2em;
+
+
+}
+.sampi{
+    text-align: center;
+}
+#mysubmit3{
+
+    font-size: 1em;
+
+}
+#gomb {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(139, 100, 92);
+    border-radius: 60px;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.3s;
+    right: 20px;
+
+
+}
+
+#csuszka {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: 0.3s;
+}
+
+/* Amikor aktív */
+#gomb.active #csuszka {
+    left: 105px;  /* 300 - 100 - 10 */
+}
+
+#gomb.active {
+    background-color: rgb(118, 118, 118);
+    
+}
+#mozdithatlan{
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(90, 90, 203);
+    
+    
+    
+    
+}
+
+
+h2{
+    color: rgb(99, 159, 233);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 300px;
+    border: 2px double hsl(188, 100%, 67%);
+    margin: 0 auto;   /* EZ KÖZÉPRE TESZI */
+}
+
+
+
+#boxfu{
+    
+    
+    background-color: greenyellow;
+    
+    height: 100px;
+    width: 100%;
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px;
+    
+
+
+}
+form{
+
+background-color: #00ddff;
+    border: 2px solid red;
+    height: 400px;
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* EZ TOLJA LE ALULRA */
+    box-shadow: 5px 5px 10px rgb(212, 255, 0);
+
+}
+#teptextbox{
+
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid black;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 15;
+    
+
+
+}
+label{
+
+    font-size: 1.5em;
+    font-family: bold;
+
+}
+#tempsub{
+
+    margin-top: 15px;
+    margin: auto;
+    width: 60px;
+    height: 40px;
+    background-color: rgb(93, 222, 213);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    font: 2.5em;
+}
+#tempsub:hover{
+
+    background-color: rgb(72, 170, 164);
+    
+
+
+
+}
+#cl{
+
+    color: rgb(255, 255, 255);
+    
+
+}
+#tempsub:hover #cl{
+
+    color: rgb(86, 86, 86);
+    
+
+}
+#result20{
+
+    font-size: 1.75;
+    font-weight: bold;
+
+}
+
+#dice1{
+
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 2px  solid black;
+    border-radius: 10px;
+    float: right;
+    transform: translateX(-200%);
+
+
+}
+#potty{
+
+    background-color: rgb(255, 0, 0);
+    width: 30px;
+    height: 30px;
+    transform: translate(35px, 35px);
+    border-radius: 20px;
+
+}
+#potty1{
+
+    background-color: rgb(0, 0, 0);
+    width: 30px;
+    height: 30px;
+    transform: translate(5px, 68px);
+    border-radius: 20px;
+
+}
+#potty2{
+
+    background-color: rgb(0, 0, 0);
+    width: 30px;
+    height: 30px;
+    transform: translate(5px, -28px);
+    border-radius: 20px;
+
+}
+#potty3{
+
+    background-color: rgb(0, 0, 0);
+    width: 30px;
+    height: 30px;
+    transform: translate(5px, -25px);
+    border-radius: 20px;
+
+}
+#potty4{
+
+    background-color: rgb(0, 0, 0);
+    width: 30px;
+    height: 30px;
+    transform: translate(60px, -88px);
+    border-radius: 20px;
+
+}
+#potty5{
+
+    background-color: rgb(0, 0, 0);
+    width: 30px;
+    height: 30px;
+    transform: translate(60px, -85px);
+    border-radius: 20px;
+
+}
+#potty6{
+
+    background-color: rgb(0, 0, 0);
+    width: 30px;
+    height: 30px;
+    transform: translate(60px, -82px);
+    border-radius: 20px;
+
+}
+
+
+
+#container2{
+
+    font-family: Arial,  sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+
+
+}
+#rolldice{
+
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: rgb(61, 114, 207);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+
+}
+#rolldice:hover{
+
+
+    background-color: rgb(49, 86, 150);
+    color: rgb(208, 207, 207);
+    
+
+}
+#rolldice:active{
+
+    background-color: rgb(113, 136, 176);
+
+}
+#numOfDice{
+
+    font-size: 2rem;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+
+}
+#dicerResult{
+
+    margin: 25px;
+
+
+}
+#diceImages img{
+
+    width:150px;
+    margin: 5px;
+}
+
