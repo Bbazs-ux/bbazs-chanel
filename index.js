@@ -364,7 +364,7 @@ console.log(testgrade)
 */
 
 const testscore = document.getElementById("mytext5");
-const resultelement6 = document.getElementById("resultelement5");
+const resultelement6 = document.getElementById("resultelement6");
 let testgrade;
 
 
@@ -403,9 +403,138 @@ mysubmit5.onclick = function(){
     }
 
 
+    let username2 ="Bbazs     ";
+    username2 =username2.trim();
+    //username2 =username2.toUpperCase();
+    username2 =username2.toLowerCase();
+    username2 =username2.repeat(2);
+    let result2 = username2.startsWith(" ");
+    
+    console.log(username2.charAt(2));
+    console.log(username2.indexOf("b"));
+    console.log(username2.lastIndexOf("b"));
+    console.log(username2.length);
+    console.log(username2);
+    console.log(result2);
+
+
 
         
-    
+    const gomb = document.getElementById("gomb");
+
+gomb.addEventListener("click", function(){
+    gomb.classList.toggle("active");
+});
        
 
 
+let phoneNumber = "123-456-7890";
+
+
+phoneNumber = phoneNumber.replaceAll("-", "");
+phoneNumber = phoneNumber.padStart(15, "0");
+
+
+console.log(phoneNumber);
+
+
+const fullName2 ="Bbazs Breki";
+
+//let firstName = fullName2.slice(0, 5);
+//let lastName = fullName2.slice(5);
+
+//let firstChar =fullName2.slice(0, 1);
+//let lastChar =fullName2.slice(-1);
+
+
+//console.log(fullName2);
+
+//console.log(firstName);
+//console.log(lastName);
+
+//console.log(firstChar);
+//console.log(lastChar);
+let firstName = fullName2.slice(0, fullName2.indexOf(" "));
+let lastName = fullName2.slice(fullName2.indexOf(" ")+1);
+
+console.log(firstName);
+console.log(lastName);
+
+
+
+
+const Email = "Bbazs.chnael@gmail.com";
+let UserName3 = Email.slice(0, Email.indexOf("@"));
+let extension = Email.slice( Email.indexOf("@"));
+console.log(UserName3)
+console.log(extension)
+
+
+
+//let Username4 =window.prompt("Enter your usernamer");
+//no method Chaining
+ 
+/*
+
+Username4 = Username4.trim();
+let letter = Username4.charAt(0);
+letter =letter.toLocaleUpperCase();
+
+let extraChars = Username4.slice(1);
+extraChars = extraChars.toLowerCase();
+Username4 = letter + extraChars
+*/
+
+//Username4= Username4.trim().charAt(0).toUpperCase()+Username4.trim().slice(1).toLowerCase();
+
+//console.log(Username4)
+
+
+
+// AND = &&
+// OR ||
+// NOT = !
+const temp = 20;
+if(temp < 0 || temp > 30){
+    console.log("The weather is bad");
+}
+
+else{
+    console.log("The weather is good");
+}
+
+const isSunny = false;
+
+if(! isSunny){
+    console.log("It is Cloudy");
+
+}
+else{
+
+    console.log("It is Sunny");
+}
+
+
+
+
+const pika = 3.14;
+if(pika === 3.14){
+    console.log("It is pi");
+
+}
+else{
+console.log("It is not pi");
+
+}
+
+let username5 ="";
+while(username5 === "" || username5===null){
+    username5 =window.prompt("Enter your name")
+
+    
+
+}
+
+console.log(`Hello ${username5}`);
+const resultelement7 = document.getElementById("resultelement7");
+resultelement7.textContent = `Hello ${username5}`;
