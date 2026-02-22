@@ -2,7 +2,8 @@
 body{
 
     background-color: cornflowerblue;
-
+    font-family: verdana;
+    text-align: center;
 }
 
 .pagination{
@@ -64,5 +65,37 @@ body{
 .buttons:hover{
 
     background-color: rgb(87, 87, 163);
+
+}
+#myButtonn{
+    
+    font-size: 3em;
+    padding: 5px 25px;
+    border-radius: 5px;
+
+}
+.myLabels{
+    background-color: rgb(177, 56, 56);
+    font-size: 3em;
+    border: 3px solid;
+   
+}
+
+#dice li::marker{
+
+
+
+    content:"✔️";
+    color: green;
+    font-size: 1.2em;
+
+
+}
+.sampi{
+    text-align: center;
+}
+#mysubmit3{
+
+    font-size: 1em;
 
 }

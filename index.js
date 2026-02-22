@@ -123,7 +123,7 @@ document.getElementById("mysubmit1").onclick = function(){
 
     radius = document.getElementById("MyRText").value;
     radius = Number(radius);
-    circumference = 2 *PI * radius;
+    circumference = 2 *Math.PI * radius;
     document.getElementById("MyH2").textContent =`A kör kerülete=${circumference} cm`;
 }
 
@@ -153,5 +153,259 @@ reset.onclick = function(){
 
 
 }
+
+let x =3;
+let y = 2;
+let z=1;
+//z = Math.round(x);
+//z = Math.floor(x);
+//z = Math.ceil(x);
+//z = Math.trunc(x);
+//z = Math.pow(x,y);
+//z = Math.sqrt(x);
+//z = Math.log(x);
+//z = Math.sin(x);
+//z = Math.cos(x);
+//z = Math.tan(x);
+//z = Math.abs(x);
+//z = Math.sign(x);
+/*
+let max = Math.max(x, y, z);
+let min = Math.min(x, y, z);
+
+console.log(max);
+console.log(min);
+*/
+/*
+const min = 50;
+const max = 100;
+
+let randomNum =Math.floor(Math.random()*(max-min))+min;
+console.log(randomNum);
+*/
+const myButtonn =document.getElementById("myButtonn");
+const mylabeln1 =document.getElementById("mylabeln1");
+const mylabeln2 =document.getElementById("mylabeln2");
+const mylabeln3 =document.getElementById("mylabeln3");
+const min = 1;
+const max = 6;
+let randomNum1;
+let randomNum2;
+let randomNum3;
+
+myButtonn.onclick=function(){
+
+randomNum1 = Math.floor(Math.random() *max)+min;
+randomNum2 = Math.floor(Math.random() *max)+min;
+randomNum3 = Math.floor(Math.random() *max)+min;
+mylabeln1.textContent =randomNum1;
+mylabeln2.textContent =randomNum2;
+mylabeln3.textContent =randomNum3;
+
+}
+const mytext1 = document.getElementById("mytext1");
+const mysubmit2 = document.getElementById("mysubmit2");
+const resultElement = document.getElementById("resultElement");
+let age;
+
+mysubmit2.onclick = function(){
+    age = mytext1.value;
+    age = Number(age);
+
+if(age >= 100){
+
+    
+    resultElement.textContent = `You are too old to enter this site.`
+}
+else if(age >=18){
+    
+    resultElement.textContent = `You are old enough to enter this website.`
+
+
+
+}
+else if(age < 0){
+
+   
+    resultElement.textContent = `Your age can not be below 0.`
+
+}
+
+
+else{
+    
+    resultElement.textContent = `You are not old enough to enter this website.`
+
+}
+
+
+
+
+
+
+
+}
+
+
+/*
+let age = 120;
+if(age >= 100){
+
+    console.log("You are too old to enter this site");
+}
+else if(age >=18){
+    console.log("You are old enough to enter this website");
+
+
+
+
+}
+else if(age < 0){
+
+    console.log("Your age can not be below 0");
+
+}
+
+
+else{
+    console.log("You are not old enough to enter this website");
+
+
+}
+*/
+
+
+const myCheckbox = document.getElementById("myCheckbox");
+const masterCard = document.getElementById("masterCard");
+const visaBTn = document.getElementById("visaBTn");
+const paypalBTn = document.getElementById("paypalBTn");
+const mysubmit3 = document.getElementById("mysubmit3");
+
+
+const subresult = document.getElementById("subresult");
+const radioresult = document.getElementById("radioresult");
+
+mysubmit3.onclick = function(){
+
+    if(myCheckbox.checked){
+        subresult.textContent =`You are subscribed`;
+
+
+    }
+    else{
+
+        subresult.textContent =`You are not subscribed`;
+    }
+    if(visaBTn.checked){
+
+        radioresult.textContent =`You are paying with Visa`;
+
+    }
+    else if(masterCard.checked){
+        radioresult.textContent =`You are paying with Mastercard`;
+
+    }
+    else if(paypalBTn.checked){
+        radioresult.textContent =`You are paying with Paypal`;
+
+    }
+    else{
+        radioresult.textContent =`You mus select a payment type`;
+
+    }
+}
+
+let old =21;
+let message = age >=18 ? "You are an adult" : "You are a minor";
+console.log(message);
+
+let purchaseAmount =125;
+let discount = purchaseAmount >=100? 10: 0;
+console.log(`Your total is $${purchaseAmount - purchaseAmount *(discount/100)}`)
+
+let day ="pizza";
+switch(day){
+
+    case 1:
+        console.log("It is Monday.");
+        break;
+     case 2:
+        console.log("It is Ruesday.");
+        break;
+    case 3:
+        console.log("It is Wednesday.");
+        break;
+    case 4:
+        console.log("It is Thursday.");
+        break;
+    case 5:
+        console.log("It is Friday.");
+        break;
+    case 6:
+        console.log("It is Saturday.");
+        break;
+    case 7:
+        console.log("It is Sunday.");
+        break;
+    default:
+        console.log(`${day} is not a day.`)
+}
+/*
+let testcore=90;
+let testgrade;
+const resultelement5 = document.getElementById("resultelement5");
+
+switch(true){
+    case testcore>=90:
+        testgrade = "A";
+        break; 
+}
+console.log(testgrade)
+*/
+
+const testscore = document.getElementById("mytext5");
+const resultelement6 = document.getElementById("resultelement5");
+let testgrade;
+
+
+mysubmit5.onclick = function(){
+    
+        let score = Number(testscore.value);
+
+        switch(true){
+        case score >=90:
+            testgrade = "A";
+            break;
+
+        
+        case score >=80:
+            testgrade = "B";
+            break;
+
+        
+        case score >=60:
+            testgrade = "C";
+            break;
+
+        
+        case score >=40:
+            testgrade = "D";
+            break;
+
+        case score >=20:
+            testgrade = "E";
+            break;
+        default:
+            testgrade = "F" ;
+
+        }
+        resultelement6.textContent = `Your grade:${testgrade}`;
+    }
+
+
+
+        
+    
+       
 
 
