@@ -526,7 +526,7 @@ else{
 console.log("It is not pi");
 
 }
-
+/*
 let username5 ="";
 while(username5 === "" || username5===null){
     username5 =window.prompt("Enter your name")
@@ -538,3 +538,191 @@ while(username5 === "" || username5===null){
 console.log(`Hello ${username5}`);
 const resultelement7 = document.getElementById("resultelement7");
 resultelement7.textContent = `Hello ${username5}`;
+
+*/
+/*
+let loggedIn =false;
+let username10;
+let password;
+
+while(!loggedIn){
+    username10= window.prompt("Enter your username");
+    password = window.prompt("Enter your password");
+    if(username10 === "Bbazs" && password === "Brekics3672"){
+
+        loggedIn =true;
+        console.log("You are logged in!");
+
+    }
+    else{
+        console.log("Invalid credentials! Oleas try again");
+
+    }
+
+}
+*/
+
+for(let i = 10; i>0; i--){
+
+    console.log(i);
+
+}
+console.log("Happy new year");
+for(let i = 1; i<=20; i++){
+    if(i == 13){
+        continue;
+
+    }
+    else{
+
+    
+    console.log(i);
+    }
+}
+console.log("Happy new year");
+for(let i = 1; i<=20; i++){
+    if(i == 13){
+        break;
+
+    }
+    else{
+
+    
+    console.log(i);
+    }
+}
+
+
+
+
+
+
+function happyBh(username11, age11){
+
+    console.log("Happy birthday to you!");
+    console.log("Happy birthday to you!");
+    console.log(`Happy birthday dear ${username11}!`);
+    console.log("Happy birthday to you!");
+    console.log(`You are ${age11} years old`);
+
+
+}
+happyBh("Bbazs", 25);
+
+
+
+function add(x, y){
+    return x + y;
+
+}
+
+
+
+function subtract(x, y){
+
+    return x - y;
+}
+function multiply(x, y){
+
+    return x * y;
+}
+function devide(x, y){
+
+    return x / y;
+}
+console.log(add(3,10));
+console.log(subtract(3,10));
+console.log(multiply(3,10));
+console.log(devide(3,10));
+
+
+function isEven(szam){
+
+    return szam % 2===0 ? true: false;
+
+}
+console.log(isEven(6));
+
+
+function validemail(email2){
+
+    if(email2.includes("@")){
+
+        return true;
+
+    }
+    else{
+        return false;
+    }
+    
+}
+console.log(validemail("Bbazs.chanel@gmail.com"));
+console.log(validemail("elonmusk.com"));
+
+/*
+function1();
+function function1(){
+
+    let x1 =1;
+    console.log(x1);
+}
+function function2(){
+
+    let x1 =2;
+    console.log(x1);
+}
+
+
+
+
+let x2 =3
+
+
+
+function4();
+
+function function3(){
+    let x2 = 1;
+    console.log(x2);
+}
+function function4(){
+    let x2 = 2;
+    console.log(x2);
+}
+    */
+
+const teptextbox =document.getElementById("teptextbox");
+const toFah =document.getElementById("toFah");
+const toCel =document.getElementById("toCel");
+const result20 =document.getElementById("result20");
+let tempi;
+
+
+function convert(){
+
+    if(toFah.checked){
+
+        tempi =Number(teptextbox.value);
+        tempi =tempi *9/5 +32;
+        result20.textContent =tempi.toFixed(1) +"°F";
+
+    }
+    else if(toCel.checked){
+
+        
+    tempi =Number(teptextbox.value);
+        tempi = (tempi -32 )*(5/9);
+        result20.textContent =tempi.toFixed(1) +"°C";
+
+    }
+    else{
+        result20.textContent ="Select a unit.";
+    }
+}
+
+
+
+
+
+
+

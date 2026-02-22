@@ -2,7 +2,7 @@
 body{
 
     background-color: cornflowerblue;
-    font-family: verdana;
+    font-family: Arial, sans-serif;
     text-align: center;
 }
 
@@ -142,5 +142,99 @@ body{
     
 }
 
+
+h2{
+    color: rgb(99, 159, 233);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 300px;
+    border: 2px double hsl(188, 100%, 67%);
+    margin: 0 auto;   /* EZ KÖZÉPRE TESZI */
+}
+
+
+
+#boxfu{
     
     
+    background-color: greenyellow;
+    
+    height: 100px;
+    width: 100%;
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px;
+    
+
+
+}
+form{
+
+background-color: #00ddff;
+    border: 2px solid red;
+    height: 400px;
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* EZ TOLJA LE ALULRA */
+    box-shadow: 5px 5px 10px rgb(212, 255, 0);
+
+}
+#teptextbox{
+
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid black;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 15;
+    
+
+
+}
+label{
+
+    font-size: 1.5em;
+    font-family: bold;
+
+}
+#tempsub{
+
+    margin-top: 15px;
+    margin: auto;
+    width: 60px;
+    height: 40px;
+    background-color: rgb(93, 222, 213);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    font: 2.5em;
+}
+#tempsub:hover{
+
+    background-color: rgb(72, 170, 164);
+    
+
+
+
+}
+#cl{
+
+    color: rgb(255, 255, 255);
+    
+
+}
+#tempsub:hover #cl{
+
+    color: rgb(86, 86, 86);
+    
+
+}
+#result20{
+
+    font-size: 1.75;
+    font-weight: bold;
+
+}
+
