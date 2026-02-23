@@ -862,9 +862,104 @@ function rollDice(){
 }
 
 
+function generatePassword(length, includeLowercase,includeUppercase, includeNumbers, includeSymbols){
+
+    const lowercaseChars ="abcdefghijklmnopqrstuvWxyz"
+    const UpperCaseChars ="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    const numberChars = "0123456789";
+    const symbolChars = "!'+!/=()*#@&"
+    let allowedChars = "";
+    let pfpassword = "";
+
+allowedChars += includeLowercase ? lowercaseChars:"";
+allowedChars += includeUppercase ? UpperCaseChars:"";
+allowedChars += includeNumbers ? numberChars:"";
+allowedChars += includeSymbols ? symbolChars:"";
+
+    if(length <= 0){
+
+        return `(password length must be at least 1)`;
+
+    }
+    if(allowedChars.length === 0){
+
+        return `(At least 1 set of character needs to be selected)`;
+
+    }
+    for(let i =0; i <length; i++){
+        const randomIndex =Math.floor(Math.random()* allowedChars.length);
+        pfpassword += allowedChars[randomIndex];
+
+    }
+
+        return pfpassword;
+}
+
+const passwordLength =12;
+const includeLowercase = true;
+const includeUppercase = true;
+const includeNumbers = true;
+const includeSymbols = true;
+
+const pfpassword = generatePassword(passwordLength,
+                                    includeLowercase,
+                                    includeUppercase,
+                                    includeNumbers, 
+                                    includeSymbols);
+console.log(`Generated password: ${pfpassword}`)
+
+
+hello(wait);
 
 
 
 
+
+function hello(callback){
+
+    console.log("hello!");
+    callback();
+}
+function wait(){
+
+    console.log("wait!")
+}
+
+
+function leave(){
+console.log("leave");
+
+}
+function goodbye(){
+
+    console.log("goodbye!");
+}
+
+
+
+
+let numBers =[1,2,3,4,5];
+
+
+numBers.forEach(cube);
+numBers.forEach(display);
+
+function display(element){
+    console.log(element);
+}
+
+function doubble(element, index, array){
+
+    array[index] = element *2;
+}
+
+function square(element, index, array){
+
+    array[index] = Math.pow(element, 2);
+}
+function cube(element, index, array){
+
+    array[index] = Math.pow(element, 3);
+}
 
 
