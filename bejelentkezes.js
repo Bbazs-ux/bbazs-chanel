@@ -1,4 +1,0 @@
-
-
-const email = document.getElementById("email").value;
-
