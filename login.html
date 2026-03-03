@@ -1,0 +1,95 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LittleFrog</title>
+    <link rel="stylesheet" href="bejelentkezes.css">
+
+</head>
+<body>
+
+    <div id="adatoldal">
+             <p id="h1"> Login</p>
+        <a href="register.html" id="reg">Register</a>
+            <div id="kerdoiv">
+            
+                <form id="loginForm">
+    <p id="cim">Login</p>
+
+    <div class="sor">
+        <label id="Email">Email:</label>
+        <input type="email" id="email" required>
+    </div>
+
+    <div class="sor">
+        <label id="Password">Password:</label>
+        <input type="password" id="password" required>
+    </div>
+
+    <button type="submit" id="loginBTn">Log in</button>
+</form>
+                
+        </div>
+
+       
+
+    </div>
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+
+
+
+
+
+
+
+    
+    <script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+import { getAuth, signInWithEmailAndPassword } 
+from "https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAvgNMW9JRoB4DDazv4J-fKL1z7GH7l1Vg",
+  authDomain: "littlefrog-87931.firebaseapp.com",
+  projectId: "littlefrog-87931",
+  appId: "1:1087927436713:web:06f2df9b13a8ffd394f0b8"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+const form = document.getElementById("loginForm");
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  signInWithEmailAndPassword(auth, email, password)
+    .then(() => {
+      window.location.replace("index1.html");
+    })
+    .catch((error) => {
+      alert(error.message);
+    });
+});
+</script>
+</body>
+</html>
